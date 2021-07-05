@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(6, 226, 255, 0.973);
+}
+
+h1 {
+    justify-self: center;
+    text-align: center;
+    font-size: 100px;
+    color: azure;
+    text-shadow: 5px cadetblue;
+}
+
+.scoreboard {
+    justify-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cornflowerblue;
+    border-color: solid 10px darkblue;
+    border-radius: 10px;
+    width: 50%;
+    align-self: center;
+    height: 100px;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.score {
+    background: blue;
+    padding: 0 48px;
+    line-height: 1;
+    border-radius: 16px;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 100px;
+}
+
+.iceburg {
+    width: 1200px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.hole {
+    flex: 1 0 25%;
+    overflow: hidden;
+    position: relative;
+    height: 150px;
+    width: 180px;
+}
+
+.hole::before {
+    display: block;
+    background: url(hole.png) bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 220px;
+    height: 90px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+}
+
+.seal {
+    background: url('seal.png') bottom center no-repeat;
+    background-size: 95%;
+    position: absolute;
+    width: 200px;
+    height: 90%;
+    top: 100%;
+    transition: all 0.5s;
+}
+
+.hole.up .seal {
+    top: 0;
+}
+
+button {
+    width: 180px;
+    font-size: 40px;
+    height: 80px;
+    color: dimgray;
+    background-color: floralwhite;
+    border-radius: 10px;
+    margin-right: 5px;
+}
