@@ -54,7 +54,7 @@ h1 {
     width: 180px;
 }
 
-.hole::before {
+.hole::after {
     display: block;
     background: url(hole.png) bottom center no-repeat;
     background-size: contain;
